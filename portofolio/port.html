@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Abdallah</title>
+    <link rel="stylesheet" href="port.style.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1"> Omar Abdallah</h1>
+        <nav>
+            <ul>
+                <a href="#" class="header-links">Home</a></li>
+                <a href="#about" class="header-links">About</a></li>
+                
+                <a href="#footer" class="header-links">Contact</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <button id="lang-toggle" style="margin-top:15px;" class="lan-button">العربية / English</button>
+        <script>
+        const englishTexts = {
+            about: "I am Omar Abdullah, I am a 13-year-old Egyptian child. My dream is to work in one of the big companies like Google and Microsoft, and I hope they will hire me. That's why I started in the world of programming. I began by learning Python, which was easy, and then I learned block development, which I didn't like. After that, I started learning HTML; it's not a programming language, but learning it was a tough task. Then I learned CSS, which is also not a programming language and was a bit complicated, but it was good. JavaScript is similar to Python in some aspects, but it was the only one that was a programming language and was difficult, but after I learned it, I found it easy. I am also a graphic designer, and I opened my first project. I work as a freelancer, and people contact me via WhatsApp to create websites for them and also to design images.",
+            html: "Html(HyperText Markup Language): It is the standard markup language for creating web pages. It describes the structure of a webpage using elements and tags.",
+            css: "CSS(Cascading Style Sheets): It is a style sheet language used for describing the presentation of a document written in HTML or XML. It controls the layout and appearance of web pages.",
+            js: "JavaScript: It is a high-level, dynamic, untyped, and interpreted programming language. It is widely used for creating interactive effects within web browsers.",
+            python: "Python: It is a high-level, interpreted programming language known for its readability",
+            indruction: "Introduction to some languages that I have learned"
+        };
+        const arabicTexts = {
+            about: " أنا عمر عبد الله، أنا طفل مصري عمري 13 عامًا. حلمي هو العمل في إحدى الشركات الكبيرة مثل جوجل ومايكروسوفت، وآمل أن يعملوا على توظيفي. لهذا السبب بدأت في عالم البرمجة. بدأت بتعلم بايثون، وهو ما كان سهلاً، ثم تعلمت تطوير البرمجيات البلوكية، الذي لم يعجبني. بعد ذلك، بدأت في تعلم لغة ترميز النص التشعبي؛ إنها ليست لغة برمجة، لكن تعلمها كان مهمة صعبة. ثم تعلمت صفحات الأنماط (الانسيابية أو المتعاقبة أو المتسلسلة)، التي ليست لغة برمجة أيضًا وكانت معقدة قليلاً، لكن كانت جيدة. جافا سكريبت مشابهة لبايثون في بعض الجوانب، لكنها كانت الوحيدة التي كانت لغة برمجة وكانت صعبة، لكن بعد أن تعلمتها، وجدتها سهلة. أنا أيضًا مصمم جرافيك، وقد فتحت مشروعي الأول. أعمل كمستقل، ويتواصل معي الناس عبر واتساب لإنشاء مواقع الويب لهم وأيضًا لتصميم الصور.  ",
+            html: "  لغة ترميز النص التشعبيهي: اللغة القياسية لإنشاء صفحات الويب. تصف هيكل الصفحة باستخدام العناصر والوسوم.",
+            css: " أوراق الأنماط المتتالية: هي لغة أنماط تُستخدم لوصف عرض المستند المكتوب بلغة  أو . تتحكم في تخطيط ومظهر صفحات الويب.",
+            js: "جافاسكريبت: هي لغة برمجة عالية المستوى، ديناميكية، غير نمطية ومفسرة. تُستخدم على نطاق واسع لإنشاء تأثيرات تفاعلية داخل متصفحات الويب.",
+            python: "بايثون: هي لغة برمجة عالية المستوى ومفسرة، معروفة بسهولة قراءتها.",
+            indruction: "مقدمة إلى بعض اللغات التي تعلمتها"
+        };
+        let isArabic = false;
+        document.getElementById('lang-toggle').onclick = function() {
+            isArabic = !isArabic;
+            document.getElementById('about').innerText = isArabic ? arabicTexts.about : englishTexts.about;
+            document.querySelector('h3:nth-of-type(1)').innerText = isArabic ? arabicTexts.html : englishTexts.html;
+            document.querySelector('h3:nth-of-type(2)').innerText = isArabic ? arabicTexts.css : englishTexts.css;
+            document.querySelector('h3:nth-of-type(3)').innerText = isArabic ? arabicTexts.js : englishTexts.js;
+            document.querySelector('h3:nth-of-type(4)').innerText = isArabic ? arabicTexts.python : englishTexts.python;
+            document.querySelector('h2').innerText = isArabic ? arabicTexts.indruction : englishTexts.indruction;
+        };
+        </script>
+    </header>
+   
+    
+    <p class="p" id="about"> I am Omar Abdullah, I am a 13-year-old Egyptian child. My dream is to work in one of the big companies like Google and Microsoft, and I hope they will hire me. That's why I started in the world of programming. I began by learning Python, which was easy, and then I learned block development, which I didn't like. After that, I started learning HTML; it's not a programming language, but learning it was a tough task. Then I learned CSS, which is also not a programming language and was a bit complicated, but it was good. JavaScript is similar to Python in some aspects, but it was the only one that was a programming language and was difficult, but after I learned it, I found it easy. I am also a graphic designer, and I opened my first project. I work as a freelancer, and people contact me via WhatsApp to create websites for them and also to design images.</p>
+    <script>
+
+    </script>
+
+
+
+
+
+
+<h2>Introduction to some languages that I have learned</h2>
+<div>
+ <h3 class="lang">
+    Html(HyperText Markup Language):</h3> It is the standard markup language for creating web pages. It describes the structure of a webpage using elements and tags.
+ 
+    <h3 class="lang">
+        CSS(Cascading Style Sheets):</h3> It is a style sheet language used for describing the presentation of a document written in HTML or XML. It controls the layout and appearance of web pages.
+    
+    <h3 class="lang">
+        JavaScript:</h3> It is a high-level, dynamic, untyped, and interpreted programming language. It is widely used for creating interactive effects within web browsers.
+    <h3 class="lang">
+        Python:</h3> It is a high-level, interpreted programming language known for its readability and simplicity. It is widely used in various fields, including web development, data analysis, artificial intelligence, and more.
+</div>
+
+
+
+
+
+
+
+
+
+        
+    
+</div>
+    
+    <footer id="footer">
+        <p class="footer-text">© 2023 Omar Abdallah. All rights reserved.</p>
+        <p class="footer-text">Follow me on <a href="https://www.instagram.com/3oomar_abdallah/" target="_blank">instgram</a>
+        <p class="footer-text">Follow me on <a href="https://www.facebook.com/omar.abdallah.346191/" target="_blank">Facebook</a></p>
+        <p class="footer-text">Follow me on <a href="https://www.linkedin.com/in/omar-abdallah-a195a4376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
+        <p class="footer-text">My <a href="https://api.whatsapp.com/send/?phone=201119523204&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></p>
+
+    </footer>
+</body>
+</html>
