@@ -46,21 +46,7 @@
             document.querySelector('h2').innerText = isArabic ? arabicTexts.indruction : englishTexts.indruction;
         };
 
-        /* Example: Render a React component inside the header */
-        const root = document.createElement('div');
-        root.id = 'react-root';
-        document.querySelector('header').appendChild(root);
 
-        function HeaderInfo() {
-            return React.createElement('div', { style: { marginTop: '20px', color: '#333' } }, 
-                'Welcome to my portfolio! (Rendered with React)'
-            );
-        }
-
-        ReactDOM.render(
-            React.createElement(HeaderInfo),
-            document.getElementById('react-root')
-        );
         </script>
     </header>
    
