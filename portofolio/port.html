@@ -45,6 +45,25 @@
             document.querySelector('h3:nth-of-type(4)').innerText = isArabic ? arabicTexts.python : englishTexts.python;
             document.querySelector('h2').innerText = isArabic ? arabicTexts.indruction : englishTexts.indruction;
         };
+        /*
+        Example Node.js code to serve this HTML file using Express.
+        Save this as server.js and run with: node server.js
+        */
+
+        const express = require('express');
+        const path = require('path');
+        const app = express();
+
+        app.use(express.static(path.dirname(__filename))); // serve static files
+
+        app.get('/', (req, res) => {
+            res.sendFile(path.join(__dirname, 'port.html'));
+        });
+
+        const PORT = process.env.PORT || 3000;
+        app.listen(PORT, () => {
+            console.log(`Portfolio site running at http://localhost:${PORT}`);
+        });
         </script>
     </header>
    
